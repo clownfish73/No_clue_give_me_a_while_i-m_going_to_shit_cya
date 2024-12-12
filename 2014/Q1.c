@@ -1,19 +1,19 @@
-#include "header.h"
-
+#include "headers.h"
+ 
 #define MAX_SIZE 10200
-
+ 
 typedef struct Node{
-    int16 data; 
+    int16 data;
     struct Node *next;
 } Node;
-
+ 
 Node * createNode(int16 data){
     Node* new_node = (Node*)malloc(sizeof(Node));
     new_node->data = data;
     new_node->next = NULL;
     return new_node;
 }
-
+ 
 Node * generateOddNums(int max){
     Node* head = createNode(1);
     Node* cur = head;
@@ -23,7 +23,7 @@ Node * generateOddNums(int max){
     }
     return head;
 }
-
+ 
 void generateLuckyNums(Node *head, int16 *size){
     Node* cur = head;
     *size = 1;
@@ -51,11 +51,11 @@ void generateLuckyNums(Node *head, int16 *size){
         (*size)++;
     }
 }
-
+ 
 void FindNums(Node *luckyHead, int16 target, int16 *less, int16 * greater){
     Node * prev = luckyHead;
     Node * cur = prev->next;
-    while (cur->data <= target){
+    while (cur->data < target){
         prev = cur;
         cur = cur->next;
     }
@@ -66,7 +66,7 @@ void FindNums(Node *luckyHead, int16 target, int16 *less, int16 * greater){
         *greater = cur->data;
     }
 }
-
+ 
 int main(){
     int16 target;
     scanf("%hd", &target);
@@ -76,11 +76,11 @@ int main(){
     Node * temp = luckyHead;
     int16 less;
     int16 greater;
-
+ 
     FindNums(luckyHead, target, &less, &greater);
-
+ 
     printf("%hd %hd\n", less, greater);
-
+ 
     return 0;
-
+ 
 }
