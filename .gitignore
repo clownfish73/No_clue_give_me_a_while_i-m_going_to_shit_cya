@@ -1,0 +1,13 @@
+*.exe
+*.out
+*.app
+*.bin
+*.o
+*.dll
+*.so
+*.dylib
+
+# Ignore build directories (commonly used for executables)
+bin/
+build/
+dist/
