@@ -7,7 +7,7 @@ for year in years:
 
 
 for year in years:
-    for i in range(1,3):
+    for i in range(1,3+1):
         _ = open(rf"{year}/Q{i}.py", "x")
         _ = open(rf"{year}/Q{i}.txt", "x") 
         _ = open(rf"{year}/Q{i}.c", "x")           
