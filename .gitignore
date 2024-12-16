@@ -7,7 +7,6 @@
 *.so
 *.dylib
 
-# Ignore build directories (commonly used for executables)
 bin/
 build/
 dist/
