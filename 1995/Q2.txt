@@ -1,0 +1,35 @@
+Question 2  
+In this question you will be asked how, in outline, you would implement a program to find magic squares. A magic square is an n by n grid containing the integers 1 to n2, which fulfils this condition: each of the sums of the n numbers on any row or column must add up to 0.5n(n2 + 1). Based on this definition, an example magic square for n = 4 is  
+
+16  15  1   2  
+6   4   10  14  
+9   8   12  5  
+3   7   11  13  
+
+Questions  
+2.1 Are magic squares (as defined above) unique or not? Why?  
+2.2 Devise a data structure to represent the grid for up to n = 10.  
+
+2.3 How would your program find magic squares?  
+
+2.4 Give a rough estimate of how long your program is likely to take for different values of n, explaining what assumptions you make.  
+
+2.5 Are there any ways in which the algorithm you have chosen reduces the size of the problem? Suggest further ways of speeding up the search while still finding the correct solution.  
+
+Marking scheme for Question 2  
+                                       Mark  
+Question 2.1 including explanation.      5  
+Question 2.2 - any suitable form.        5  
+Question 2.3 with good description of  
+  a valid technique.                     5  
+Question 2.4  
+  to within a few orders of magnitude  
+  and with justification.                5  
+Question 2.5                             5  
+Marks for clear handwriting and  
+  concise answers.                       5  
+
+Total marks available for Question 2     30  
+
+Total marks available BIO 1995 Round One 100  
+End of the British Informatics Olympiad Round One paper.
